@@ -13,8 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc && tsc --project tsconfig.cjs.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && tsc --project tsconfig.cjs.json"
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,8 @@
   },
   "homepage": "https://github.com/JessePol/speedsheet#readme",
   "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.17",
     "typescript": "^5.3.3"
   }
 }
