@@ -13,7 +13,9 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc && tsc --project tsconfig.cjs.json"
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
   },
   "repository": {
     "type": "git",
